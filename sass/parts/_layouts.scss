@@ -1,0 +1,40 @@
+.col-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	//margin-top: 2em;
+	gap: 1em;
+}
+
+.col-body {
+	order: 1;
+	flex: 5 0 75%;
+}
+
+.col-body p:first-child {
+	margin-top: 0;
+}
+
+.col-videocon {
+	order: 2;
+	flex: 1 0 25%;
+	margin-right: auto;
+	padding: 0;
+}
+
+@media screen and (max-width:960px) {
+	.col-container { flex-wrap: wrap;  }
+	.col-body { flex-basis: 100%; }
+}
+
+.col-body h1,
+.col-body h2,
+.col-body h3,
+.col-body h4,
+.col-body h5,
+.col-body h6 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}

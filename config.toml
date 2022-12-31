@@ -1,0 +1,30 @@
+base_url = "https://github.com/oneeronaut/simstim"
+title = "simstim"
+build_search_index = false
+generate_feed = false
+compile_sass = true
+minify_html = true
+
+[markdown]
+highlight_code = true
+highlight_theme = "ayu-dark"
+render_emoji = true
+
+[extra]
+toc = true
+use_cdn = false
+favicon = "/icon/favicon.png"
+theme = "auto"      
+
+menu = [
+    { name = "/one", url = "/one", weight = 1 },
+    { name = "/two", url = "/two", weight = 2 },
+    { name = "/three", url = "/three", weight = 3 },
+]
+
+socials = [
+    { name = "twitter", url = "https://twitter.com/", icon = "twitter" },
+    { name = "github", url = "https://github.com/", icon = "github" },
+]
+
+custom_css = []
