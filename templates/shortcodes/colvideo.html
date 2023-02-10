@@ -2,7 +2,7 @@
     <div class="col-body">
         {{ body | markdown | safe }}
     </div>
-    <figure class="col-videocon">
+    <figure class="col-mediacon">
         <video controls muted loop>
             <source src="{{ src }}" type="{% if type %}{{ type }}{% else %}video/mp4{% endif %}">
             Your browser does not support the video tag.

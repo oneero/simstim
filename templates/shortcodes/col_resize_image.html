@@ -1,0 +1,10 @@
+<div class="col-container">
+    <div class="{% if half %}col-body-small{% else %}col-body{% endif %}">
+        {{ body | markdown | safe }}
+    </div>
+    {% set image = resize_image(path=path, width=width, height=height, op=op) %}
+    <figure class="{% if half %}col-mediacon-big{% else %}col-mediacon{% endif %}">
+        <img src="{{ image.url }}" />
+        {% if caption %}<h4>{{ caption }}</h4>{% endif %}
+    </figure>
+</div>

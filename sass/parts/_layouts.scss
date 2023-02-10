@@ -13,13 +13,29 @@
 	flex: 5 0 75%;
 }
 
+.col-body-small {
+	order: 1;
+	flex: 5 0 50%;
+}
+
 .col-body p:first-child {
 	margin-top: 0;
 }
 
-.col-videocon {
+.col-body-small p:first-child {
+	margin-top: 0;
+}
+
+.col-mediacon {
 	order: 2;
 	flex: 1 0 25%;
+	margin-right: auto;
+	padding: 0;
+}
+
+.col-mediacon-big {
+	order: 2;
+	flex: 1 0 50%;
 	margin-right: auto;
 	padding: 0;
 }
